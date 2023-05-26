@@ -17,11 +17,11 @@
                 <asp:TextBox ID="username" runat="server" CssClass="form-control" required="True"></asp:TextBox>
             </div>
             <div class="form-group">
-                <label for="password"class="label">Password:</label>
+                <label for="password" class="label">Password:</label>
                 <asp:TextBox ID="password" runat="server" TextMode="Password" CssClass="form-control" required="True"></asp:TextBox>
             </div>
-            <div class="form-group" >
-                <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="btnLogin_Click"/>
+            <div class="form-group">
+                <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="btnLogin_Click" />
             </div>
             <div class="register-link">
                 Don't have an account? <a href="RegisterPage.aspx">Register</a>

@@ -8,10 +8,10 @@ h3 {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 60%;
     margin: 0 auto;
-    margin-top: 150px;
-    padding: 20px;
+    margin-top: 15%;
+    padding: 5%;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -23,25 +23,25 @@ h2, h1 {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
 .label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2%;
     color: grey;
 }
 
 .form-control {
     width: 96%;
-    padding: 8px;
+    padding: 2%;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
 
 .btn {
     width: 100%;
-    padding: 8px;
+    padding: 2%;
     background-color: maroon;
     color: #fff;
     border: none;
@@ -51,7 +51,7 @@ h2, h1 {
 
 .register-link {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 2%;
     color: grey;
 }
 
@@ -62,7 +62,7 @@ h2, h1 {
 
 @media only screen and (max-width: 480px) {
     .container {
-        margin-top: 50px;
-        padding: 10px;
+        margin-top: 10%;
+        padding: 2%;
     }
 }

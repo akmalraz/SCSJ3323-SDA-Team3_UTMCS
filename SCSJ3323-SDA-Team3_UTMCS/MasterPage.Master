@@ -6,11 +6,8 @@
 <head runat="server">
     <title>My Website</title>
     <link href="StyleSheet/MasterPage_style.css" rel="stylesheet" />
-    <link href="StyleSheet/ProfilePage_style.css" rel="stylesheet" type="text/css" />
+    
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
-    <asp:ContentPlaceHolder ID="main" runat="server"></asp:ContentPlaceHolder>
-    <asp:Image ID="Image1" runat="server" CssClass="profile-image" ImageUrl='<%# GetProfilePicture() %>' />
-
 </head>
 <body>
     <div class="right">
@@ -25,7 +22,6 @@
             </div>
             <div class="sidebar">
                 <asp:Image ID="imgProfilePicture" runat="server" CssClass="profile-image" ImageUrl='<%# GetProfilePicture() %>' />
-
                 <ul>
                     <li><a href="ProfilePage.aspx">Profile</a></li>
                     <% if (Session["role"].ToString() == "User") { %>

@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SCSJ3323_SDA_Team3_UTMCS.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>My Website</title>
+    <link href="StyleSheet/MasterPage_style.css" rel="stylesheet" />
+    <link href="StyleSheet/ProfilePage_style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="main" runat="server"></asp:ContentPlaceHolder>
+    <asp:Image ID="Image1" runat="server" CssClass="profile-image" ImageUrl='<%# GetProfilePicture() %>' />
+
+</head>
+<body>
+    <div class="right">
+        <% if (Session["LoggedInUser"] != null) { %>
+        <form id="form1" runat="server">
+            <div class="navbar">
+                <a href="HomePage.aspx">Home</a>
+                <div>
+                    Welcome, <%= Session["LoggedInUser"].ToString() %>!
+                    <a href="LogoutPage.aspx">Logout</a>
+                </div>
+            </div>
+            <div class="sidebar">
+                <asp:Image ID="imgProfilePicture" runat="server" CssClass="profile-image" />
+                <ul>
+                    <li><a href="ProfilePage.aspx">Profile</a></li>
+                    <% if (Session["role"].ToString() == "User") { %>
+                    <li><a href="AppointmentPage.aspx">Appointment</a></li>
+                    <li><a href="ReportPage.aspx">Report</a></li>
+                    <% } %>
+                    <% if (Session["role"].ToString() == "Admin") { %>
+                    <li><a href="ManageuserPage.aspx">Manage User</a></li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <% } else { 
+            Response.Redirect("LoginPage.aspx");
+        } %>
+    </div>
+</body>
+</html>

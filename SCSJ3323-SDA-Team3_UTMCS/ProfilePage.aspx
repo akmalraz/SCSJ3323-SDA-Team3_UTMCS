@@ -1,9 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ProfilePage.aspx.cs" Inherits="SCSJ3323_SDA_Team3_UTMCS.ProfilePage" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    
-</asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="header">

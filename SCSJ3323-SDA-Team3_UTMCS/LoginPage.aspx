@@ -5,7 +5,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Login Page</title>
-    <link href="StyleSheet/LoginPage_style.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .container {
+            margin-top: 50px;
+            max-width: 400px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .register-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+        h1,h2{
+            text-align:center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">

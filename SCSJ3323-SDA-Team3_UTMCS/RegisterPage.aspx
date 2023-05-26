@@ -5,7 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Registration Page</title>
-    <link href="StyleSheet/RegisterPage_style.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        h1,h2{
+            text-align:center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -45,5 +50,6 @@
             </div>
         </div>
     </form>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

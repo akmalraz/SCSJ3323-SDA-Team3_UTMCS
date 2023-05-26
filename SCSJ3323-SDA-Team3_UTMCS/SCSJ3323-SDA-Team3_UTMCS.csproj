@@ -71,6 +71,8 @@
     <Content Include="LoginPage.aspx" />
     <Content Include="LogoutPage.aspx" />
     <Content Include="ManageuserPage.aspx" />
+    <Content Include="Picture\Akmal.png" />
+    <Content Include="Picture\image.jpg" />
     <Content Include="ProfilePage.aspx" />
     <Content Include="RegisterPage.aspx" />
     <Content Include="ReportPage.aspx" />
@@ -157,7 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="JavaScript\" />
-    <Folder Include="Picture\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

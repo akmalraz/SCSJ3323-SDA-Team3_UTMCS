@@ -24,7 +24,8 @@
                 </div>
             </div>
             <div class="sidebar">
-                <asp:Image ID="imgProfilePicture" runat="server" CssClass="profile-image" />
+                <asp:Image ID="imgProfilePicture" runat="server" CssClass="profile-image" ImageUrl='<%# GetProfilePicture() %>' />
+
                 <ul>
                     <li><a href="ProfilePage.aspx">Profile</a></li>
                     <% if (Session["role"].ToString() == "User") { %>

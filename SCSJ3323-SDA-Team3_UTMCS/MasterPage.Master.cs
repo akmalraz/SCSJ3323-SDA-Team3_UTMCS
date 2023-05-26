@@ -26,15 +26,15 @@ namespace SCSJ3323_SDA_Team3_UTMCS
         // Method to retrieve the profile picture path from the session and return the image URL
         protected string GetProfilePicture()
         {
-            if (Session["ProfilePicturePath"] != null)
+            if (Session["profilePic"] != null)
             {
-                string profilePicturePath = Session["ProfilePicturePath"].ToString();
+                string profilePicturePath = Session["profilePic"].ToString();
                 return profilePicturePath;
             }
             else
             {
                 // Return a default image URL if the profile picture path is not available
-                return "path/to/default/image.jpg";
+                return "Picture/image.jpg";
             }
         }
     }

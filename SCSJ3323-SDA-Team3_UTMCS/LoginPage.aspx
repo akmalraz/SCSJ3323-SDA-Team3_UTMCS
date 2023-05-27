@@ -20,7 +20,7 @@
             margin-top: 20px;
             text-align: center;
         }
-        h1,h2{
+        h2{
             text-align:center;
         }
     </style>

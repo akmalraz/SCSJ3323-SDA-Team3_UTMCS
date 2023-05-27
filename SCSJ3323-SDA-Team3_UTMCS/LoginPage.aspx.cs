@@ -17,6 +17,7 @@ namespace SCSJ3323_SDA_Team3_UTMCS
             string MatrixId = username.Text;
             string Password = password.Text;
 
+
             if (user.ValidateUser(MatrixId, Password, out string role))
             {
                 // Store user information in session variables
@@ -45,7 +46,10 @@ namespace SCSJ3323_SDA_Team3_UTMCS
             else
             {
                 // Display error message for invalid login
+                errMsg.Text = "Invalid Username or Password";
             }
         }
+
+        
     }
 }

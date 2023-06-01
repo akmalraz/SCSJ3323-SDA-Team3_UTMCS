@@ -33,13 +33,22 @@ namespace SCSJ3323_SDA_Team3_UTMCS
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// imgProfilePicture control.
+        /// imgProfilePic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgProfilePicture;
+        protected global::System.Web.UI.WebControls.Image imgProfilePic;
+
+        /// <summary>
+        /// hdnProfilePicPath control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdnProfilePicPath;
 
         /// <summary>
         /// MainContent control.

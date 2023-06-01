@@ -1,9 +1,12 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace SCSJ3323_SDA_Team3_UTMCS
 {
@@ -15,7 +18,21 @@ namespace SCSJ3323_SDA_Team3_UTMCS
             if (Session["LoggedInUser"] != null)
             {
                 // Set the profile picture image URL
-                imgProfilePicture.ImageUrl = GetProfilePicture();
+                User user = new User();
+                // Get the logged-in user's matrix ID from the session
+                string matrixId = Session["LoggedInUser"] as string;
+
+                // Retrieve the user details from the DAL
+                DataTable dtUser = user.GetUserByMatrixId(matrixId);
+
+                if (dtUser.Rows.Count > 0)
+                {
+                    DataRow row = dtUser.Rows[0];
+
+                    // Display the user details on the page
+                    imgProfilePic.ImageUrl = row["profilePic"].ToString();
+                    hdnProfilePicPath.Value = row["profilePic"].ToString();
+                }
             }
             else
             {

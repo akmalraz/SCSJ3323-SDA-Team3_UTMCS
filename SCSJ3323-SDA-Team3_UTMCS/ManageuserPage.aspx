@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ManageuserPage.aspx.cs" Inherits="SCSJ3323_SDA_Team3_UTMCS.ManageuserPage" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Manage User</h2>
     <div class="table-responsive">

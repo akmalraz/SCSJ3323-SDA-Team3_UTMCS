@@ -5,10 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Registration Page</title>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!--bootstrap css-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!--datatables css-->
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--fontawesome css-->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <!--popper/bootstrap js-->
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
     <style>
-        h1,h2{
-            text-align:center;
+        h1, h2 {
+            text-align: center;
         }
     </style>
 </head>

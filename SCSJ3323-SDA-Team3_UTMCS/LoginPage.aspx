@@ -6,6 +6,15 @@
 <head runat="server">
     <title>Login Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!--bootstrap css-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!--datatables css-->
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--fontawesome css-->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <!--popper/bootstrap js-->
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
     <style>
         .container {
             margin-top: 50px;
